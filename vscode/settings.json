@@ -1,0 +1,18 @@
+{
+    "workbench.colorTheme": "Dracula",
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 13,
+    "explorer.confirmDelete": false,
+    "git.autofetch": true,
+    "window.zoomLevel": 0,
+    "explorer.confirmDragAndDrop": false,
+    "terminal.integrated.rendererType": "dom",
+    "python.dataScience.askForKernelRestart": false,
+    "python.dataScience.sendSelectionToInteractiveWindow": true,
+    "python.venvPath": "${workspaceFolder}/.venv/bin/python",
+    "python.pythonPath": ".venv/bin/python",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.jediEnabled": false,
+}
