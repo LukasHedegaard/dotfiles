@@ -1,0 +1,15 @@
+[core]
+        editor = nano
+[user]
+        name = LukasHedegaard
+        email = lh@eng.au.dk
+[alias]
+        unstage = reset HEAD
+        undo-commit = reset --soft
+        clean = reset --hard
+        b = branch
+        c = commit
+        p = pull
+        s = status
+        l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+        integrate = "!test \"$(git merge-base HEAD \"$1\")\" = \"$(git rev-parse HEAD)\" && git merge --no-ff --edit $1 || echo >&2 \"Not up to date; refusing to merge, rebase first\""
