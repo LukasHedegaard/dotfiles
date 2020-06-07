@@ -6,10 +6,12 @@
 [alias]
         unstage = reset HEAD
         undo-commit = reset --soft
-        clean = reset --hard
+        clean = !git add -A && git commit -qm 'CLEAN SAVEPOINT' && git reset HEAD~1 --hard
         b = branch
         c = commit
         p = pull
         s = status
         l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
         integrate = "!test \"$(git merge-base HEAD \"$1\")\" = \"$(git rev-parse HEAD)\" && git merge --no-ff --edit $1 || echo >&2 \"Not up to date; refusing to merge, rebase first\""
+        alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
+        amend = commit --amend --no-edit
