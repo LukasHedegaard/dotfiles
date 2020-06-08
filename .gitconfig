@@ -6,7 +6,7 @@
 [alias]
         unstage = reset HEAD
         undo-commit = reset --soft
-        clean = !git add -A && git commit -qm 'CLEAN SAVEPOINT' && git reset HEAD~1 --hard
+        wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
         b = branch
         c = commit
         p = pull
