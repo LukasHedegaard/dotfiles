@@ -16,7 +16,7 @@ function plab
 end
 
 function pcode
-  cd ~/Projects/$argv && conda activate $argv && jupyter lab
+  cd ~/Projects/$argv && conda activate $argv && code .
 end
 
 function gpubookings
